@@ -4,10 +4,9 @@ import PackageDescription
 let package = Package(
     name: "DiffMatchPatch",
     products: [
-        .library(name: "DiffMatchPatch", targets: ["DiffMatchPatch"]),
+        .library(name: "DiffMatchPatch", targets: ["diff_match_patch"]),
     ],
     targets: [
         .target(name: "diff_match_patch", dependencies: []),
-        .target(name: "DiffMatchPatch", dependencies:["diff_match_patch"])
     ]
 )
